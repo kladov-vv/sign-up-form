@@ -113,10 +113,6 @@ img.logo{
     font-weight: 600;
 }
 
-.input-wrapper {
-
-}
-
 .input-wrapper > label {
     display: block;
     
@@ -130,10 +126,19 @@ img.logo{
     width: 170px;
     padding: 3px 6px;    
 
-    border: 1px solid lightgrey;
+    border: 1px solid #596D48;
     border-radius: 5px;
 
     font-size: 0.8rem;
+}
+
+.input-wrapper > input:focus {
+    border: 1px solid #1966FF;
+    box-shadow: rgb(1, 1, 1, 0.1) 0px 5px 5px;
+}
+
+.input-wrapper > input[type="password"]:invalid {
+    border: 2px solid #D3212D;
 }
 
 .btn-wrapper {
