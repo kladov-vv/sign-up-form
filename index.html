@@ -27,11 +27,11 @@
                     <p>Let's do this!</p>
                     <div class="input-wrapper">
                         <label for="first-name">FIRST NAME</label>
-                        <input type="text" id="first-name">
+                        <input type="text" id="first-name" pattern="^[^0-9]+$">
                     </div>
                     <div class="input-wrapper">
                         <label for="last-name">LAST NAME</label>
-                        <input type="text" id="last-name">
+                        <input type="text" id="last-name" pattern="^[^0-9]+$">
                     </div>
                     <div class="input-wrapper">
                         <label for="email">EMAIL</label>
@@ -39,15 +39,15 @@
                     </div>
                     <div class="input-wrapper">
                         <label for="phone">PHONE NUMBER</label>
-                        <input type="text" id="phone">
+                        <input type="text" id="phone" pattern="^[+0-9]+$">
                     </div>
                     <div class="input-wrapper">
                         <label for="password1">PASSWORD</label>
-                        <input type="password" id="password1">
+                        <input type="password" id="password1" pattern="^[.@$!%*#?&a-zA-Z0-9]{8,}$">
                     </div>
                     <div class="input-wrapper">
                         <label for="password2">CONFIRM PASSWORD</label>
-                        <input type="password" id="password2">
+                        <input type="password" id="password2" pattern="^[.@$!%*#?&a-zA-Z0-9]{8,}$"> 
                     </div>
                 </div>
                 <div class="btn-wrapper">
