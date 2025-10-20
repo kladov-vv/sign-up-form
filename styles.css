@@ -74,7 +74,7 @@ img.logo{
 
 /* SIGN-UP SECTION */
 .sign-up-section {
-    background-color: whitesmoke;
+    background-color: #f5f5f5;
 }
 
 .sign-up-cta,
@@ -126,18 +126,19 @@ img.logo{
     width: 170px;
     padding: 3px 6px;    
 
-    border: 1px solid #596D48;
+    border: 2px solid #ccc;
     border-radius: 5px;
 
     font-size: 0.8rem;
 }
 
 .input-wrapper > input:focus {
-    border: 1px solid #1966FF;
-    box-shadow: rgb(1, 1, 1, 0.1) 0px 5px 5px;
+    border: 2px solid #1966FF;
+    outline: none;
+    box-shadow: rgb(1, 1, 1, 0.1) 5px 5px 5px;
 }
 
-.input-wrapper > input[type="password"]:invalid {
+.input-wrapper > input:invalid {
     border: 2px solid #D3212D;
 }
 
@@ -152,13 +153,17 @@ img.logo{
     border: none;
     border-radius: 5px;
     
-    box-shadow: rgb(1, 1, 1, 0.1) 5px 5px 5px;
+    box-shadow: rgb(1, 1, 1, 0.2) 5px 5px 5px;
 
     color: #fff;
     background-color: var(--accent-color);
 
     font-weight: 600;
     font-size: 0.8rem;
+}
+
+.form-btn:hover {
+    background-color: hsl(from var(--accent-color) h s calc(l + 10));
 }
 
 .log-in-text {
@@ -170,4 +175,8 @@ img.logo{
 
 .log-in-text > a {
     color: var(--accent-color);
+}
+
+.log-in-text > a:hover {
+    color: hsl(from var(--accent-color) h s calc(l + 15));
 }
